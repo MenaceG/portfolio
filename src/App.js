@@ -30,8 +30,8 @@ function App() {
 
       <div className="skills m-2 mb-10 sm:w-165">
         <h2 className="w-full font-bold text-3xl mb-4">Skills</h2>
-        <div className='flex flex-col border-2 border-[#1c1c1e] rounded-lg p-4'>
-          <div className="w-half skillBox">
+        <div className='flex flex-col sm:flex-row border-2 border-[#1c1c1e] rounded-lg p-5'>
+          <div className="w-half skillBox pr-5">
             <ul className="grid grid-cols-3 gap-4 content-center ">
               <li className="px-4 py-2 bg-gray-800 text-blue-400 rounded-full">React</li>
               <li className="px-4 py-2 bg-gray-800 text-green-400 rounded-full">PostgreSQL</li>
