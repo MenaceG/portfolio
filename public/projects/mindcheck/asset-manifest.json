@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projects/mindcheck/static/css/main.39cc5347.css",
+    "main.js": "/projects/mindcheck/static/js/main.35caf21f.js",
+    "index.html": "/projects/mindcheck/index.html",
+    "main.39cc5347.css.map": "/projects/mindcheck/static/css/main.39cc5347.css.map",
+    "main.35caf21f.js.map": "/projects/mindcheck/static/js/main.35caf21f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39cc5347.css",
+    "static/js/main.35caf21f.js"
+  ]
+}

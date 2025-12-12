@@ -10,19 +10,21 @@ export function Projects() {
             name: "MindCheck",
             description:
                 "A full-stack mental health assessment platform featuring AI-powered chat support, self-assessment tests, and doctor recommendations.",
-            link: "https://github.com/MenaceG/mindCheck", // Placeholder link
+            link: "/projects/mindcheck/index.html",
             github: "https://github.com/MenaceG/mindCheck",
             tech: ["React", "Node.js", "MongoDB", "Express", "OpenAI API"],
             status: "Live",
+            image: "/images/mindcheck.png"
         },
         {
             name: "Disaster Awareness Tool",
             description:
                 "Real-time disaster monitoring dashboard integrating weather APIs and geolocation to provide live alerts for earthquakes, floods, and wildfires.",
-            link: "https://github.com/MenaceG/disaster-tool",
+            link: "/projects/disaster-tool/index.html",
             github: "https://github.com/MenaceG/disaster-tool",
             tech: ["React", "TypeScript", "TailwindCSS", "TanStack Query", "Vite"],
             status: "Building",
+            image: "/images/disaster-tool.png"
         },
         {
             name: "VehicleOGraph",
@@ -32,6 +34,7 @@ export function Projects() {
             github: "https://github.com/MenaceG/VehicleOGraph",
             tech: ["Android", "Java", "XML", "SQLite", "MPAndroidChart"],
             status: "Live",
+            image: "https://placehold.co/800x500/1a1a1a/666?text=VehicleOGraph"
         },
     ];
 
@@ -62,7 +65,7 @@ export function Projects() {
                             <div className="relative h-64 w-full overflow-hidden bg-gray-900">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
                                 <img
-                                    src={`https://placehold.co/800x500/1a1a1a/666?text=${encodeURIComponent(project.name)}`}
+                                    src={project.image}
                                     alt={project.name}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                 />

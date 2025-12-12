@@ -9,6 +9,7 @@ export function Experience() {
             company: "IBM",
             role: "Project Lead",
             date: "Jun 2025 - Aug 2025",
+            logo: "/images/ibm.png",
             description: [
                 "Developed a full-stack MERN web application for mental health assessments.",
                 "Implemented tests for Depression, Anxiety, ADHD, and OCD with structured scoring and insights.",
@@ -20,6 +21,7 @@ export function Experience() {
             company: "Carnama",
             role: "Frontend Developer",
             date: "Oct 2024 - Jan 2025",
+            logo: "/images/carnaama.png",
             description: [
                 "Designed and developed the user interface for Carnaama's web platform, focusing on creating a modern, intuitive, and visually appealing design.",
                 "Leveraged ReactJs hooks (useState, useEffect) for state management and optimized rendering, ensuring efficient and maintainable code.",
@@ -30,6 +32,7 @@ export function Experience() {
             company: "Hexovision",
             role: "Web Developer",
             date: "Aug 2024 - Oct 2024",
+            logo: "/images/hexovision.png",
             description: [
                 "Developed and launched the company’s website using HTML, CSS, JavaScript, and PHP, ensuring a responsive and user-friendly experience across all devices.",
                 "Integrated backend services with PHP to enable dynamic content management and real-time updates.",
@@ -67,10 +70,12 @@ export function Experience() {
                             <div className="relative flex flex-col md:flex-row gap-6 md:gap-8 md:items-start">
                                 {/* Icon/Logo Placeholder */}
                                 <div className="flex-shrink-0">
-                                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 border border-white/10 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-300">
-                                        <span className="text-xl font-bold text-gray-400 group-hover:text-white">
-                                            {job.company.charAt(0)}
-                                        </span>
+                                    <div className="w-16 h-16 rounded-xl bg-white p-2 border border-white/10 flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                                        <img
+                                            src={job.logo}
+                                            alt={job.company}
+                                            className="w-full h-full object-contain"
+                                        />
                                     </div>
                                 </div>
 
