@@ -27,14 +27,14 @@ export function Projects() {
             image: "/images/disaster-tool.png"
         },
         {
-            name: "VehicleOGraph",
+            name: "GraphOMobile",
             description:
-                "Android application for tracking vehicle mileage (tank-to-tank), fuel expenses, and maintenance schedules with visual analytics.",
-            link: "", // No web link for Android app usually
+                "A comprehensive landing page for the Vehicle Mileage Tracker Android app, featuring feature showcases, download links, and performance analytics previews.",
+            link: "/projects/GraphOMobile/index.html",
             github: "https://github.com/MenaceG/VehicleOGraph",
-            tech: ["Android", "Java", "XML", "SQLite", "MPAndroidChart"],
+            tech: ["Next.js", "React", "TailwindCSS", "Android", "Java"],
             status: "Live",
-            image: "https://placehold.co/800x500/1a1a1a/666?text=VehicleOGraph"
+            image: "/images/graphomobile.png"
         },
     ];
 
