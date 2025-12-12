@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0B0B0B;
+  --color-foreground: #ededed;
+  --color-card: #151515;
+  --color-card-hover: #1a1a1a;
+  --color-border-subtle: #1F1F1F;
+  --color-primary: #ffffff;
+  --color-secondary: #a1a1aa;
+  --color-accent: #3b82f6;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to sure everything still looks
+  correct as you migrate.
+*/
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+}
